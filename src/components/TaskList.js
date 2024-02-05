@@ -3,13 +3,13 @@ import Task from "./Task";
 import NewTaskForm from "./NewTaskForm";
 import CategoryFilter from "./CategoryFilter";
 import { useState } from "react";
-import { CATEGORIES, TASKS } from "../data";
+import { CATEGORIES } from "../data";
 
 
 
 function TaskList({tasks}) {
 
-  // ============== NewTaskForm Code =================
+  // ============== NewTaskForm Props =================
 
   const [newTask, setNewTask] = useState("");
   const [newCategory, setNewCategory] = useState("");
@@ -43,7 +43,7 @@ function TaskList({tasks}) {
   // =================================================
 
 
-  // =================== category filter =============
+  // =================== CategoryFilter Props =============
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   function handleOnClick(event){
